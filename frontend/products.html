@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h2>ShopEase</h2>
+
+        <ul class="nav-links">
+            <li>
+    <a href="#" id="logoutBtn">
+        Logout
+    </a>
+</li>
+            <li><a href="orders.html">My Orders</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </nav>
+
+    <section class="products-section">
+
+        <h1>Our Products</h1>
+
+        <div class="controls">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search products..."
+            >
+
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Fashion">Fashion</option>
+                <option value="Accessories">Accessories</option>
+            </select>
+
+            <select id="sortPrice">
+                <option value="default">Sort By</option>
+                <option value="low-high">Price Low → High</option>
+                <option value="high-low">Price High → Low</option>
+            </select>
+
+        </div>
+
+        <div id="productContainer" class="product-grid"></div>
+
+    </section>
+
+<script src="products.js"></script>
+    
+
+</body>
+</html>
+<script src="logout.js"></script>
